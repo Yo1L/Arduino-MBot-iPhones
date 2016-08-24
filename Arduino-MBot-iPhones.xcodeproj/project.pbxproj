@@ -15,6 +15,13 @@
 		8F9C79C01D6E4275009EC1AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9C79BE1D6E4275009EC1AE /* LaunchScreen.storyboard */; };
 		8F9C79CB1D6E4276009EC1AE /* Arduino_MBot_iPhonesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C79CA1D6E4276009EC1AE /* Arduino_MBot_iPhonesTests.m */; };
 		8F9C79D61D6E4276009EC1AE /* Arduino_MBot_iPhonesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C79D51D6E4276009EC1AE /* Arduino_MBot_iPhonesUITests.m */; };
+		8F9C79E61D6E4455009EC1AE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9C79E51D6E4455009EC1AE /* AVFoundation.framework */; };
+		8F9C79E81D6E445D009EC1AE /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9C79E71D6E445D009EC1AE /* MultipeerConnectivity.framework */; };
+		8F9C79EA1D6E446F009EC1AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9C79E91D6E446F009EC1AE /* CoreGraphics.framework */; };
+		8F9C79EC1D6E4479009EC1AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9C79EB1D6E4479009EC1AE /* UIKit.framework */; };
+		8F9C79EE1D6E4482009EC1AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9C79ED1D6E4482009EC1AE /* Foundation.framework */; };
+		8F9C79F71D6E45CD009EC1AE /* BTDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C79F41D6E45CD009EC1AE /* BTDiscovery.m */; };
+		8F9C79F81D6E45CD009EC1AE /* BTService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C79F61D6E45CD009EC1AE /* BTService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,15 @@
 		8F9C79D11D6E4276009EC1AE /* Arduino-MBot-iPhonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino-MBot-iPhonesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9C79D51D6E4276009EC1AE /* Arduino_MBot_iPhonesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arduino_MBot_iPhonesUITests.m; sourceTree = "<group>"; };
 		8F9C79D71D6E4276009EC1AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9C79E51D6E4455009EC1AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8F9C79E71D6E445D009EC1AE /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		8F9C79E91D6E446F009EC1AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F9C79EB1D6E4479009EC1AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8F9C79ED1D6E4482009EC1AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8F9C79F31D6E45CD009EC1AE /* BTDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTDiscovery.h; path = Classes/BTDiscovery.h; sourceTree = "<group>"; };
+		8F9C79F41D6E45CD009EC1AE /* BTDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTDiscovery.m; path = Classes/BTDiscovery.m; sourceTree = "<group>"; };
+		8F9C79F51D6E45CD009EC1AE /* BTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTService.h; path = Classes/BTService.h; sourceTree = "<group>"; };
+		8F9C79F61D6E45CD009EC1AE /* BTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTService.m; path = Classes/BTService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9C79EE1D6E4482009EC1AE /* Foundation.framework in Frameworks */,
+				8F9C79EC1D6E4479009EC1AE /* UIKit.framework in Frameworks */,
+				8F9C79EA1D6E446F009EC1AE /* CoreGraphics.framework in Frameworks */,
+				8F9C79E81D6E445D009EC1AE /* MultipeerConnectivity.framework in Frameworks */,
+				8F9C79E61D6E4455009EC1AE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,7 @@
 		8F9C79A41D6E4275009EC1AE = {
 			isa = PBXGroup;
 			children = (
+				8F9C79F91D6E4657009EC1AE /* Frameworks */,
 				8F9C79AF1D6E4275009EC1AE /* Arduino-MBot-iPhones */,
 				8F9C79C91D6E4276009EC1AE /* Arduino-MBot-iPhonesTests */,
 				8F9C79D41D6E4276009EC1AE /* Arduino-MBot-iPhonesUITests */,
@@ -101,6 +123,7 @@
 		8F9C79AF1D6E4275009EC1AE /* Arduino-MBot-iPhones */ = {
 			isa = PBXGroup;
 			children = (
+				8F9C79F21D6E45C1009EC1AE /* Classes */,
 				8F9C79B31D6E4275009EC1AE /* AppDelegate.h */,
 				8F9C79B41D6E4275009EC1AE /* AppDelegate.m */,
 				8F9C79B61D6E4275009EC1AE /* ViewController.h */,
@@ -138,6 +161,29 @@
 				8F9C79D71D6E4276009EC1AE /* Info.plist */,
 			);
 			path = "Arduino-MBot-iPhonesUITests";
+			sourceTree = "<group>";
+		};
+		8F9C79F21D6E45C1009EC1AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F9C79F31D6E45CD009EC1AE /* BTDiscovery.h */,
+				8F9C79F41D6E45CD009EC1AE /* BTDiscovery.m */,
+				8F9C79F51D6E45CD009EC1AE /* BTService.h */,
+				8F9C79F61D6E45CD009EC1AE /* BTService.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8F9C79F91D6E4657009EC1AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F9C79ED1D6E4482009EC1AE /* Foundation.framework */,
+				8F9C79EB1D6E4479009EC1AE /* UIKit.framework */,
+				8F9C79E91D6E446F009EC1AE /* CoreGraphics.framework */,
+				8F9C79E71D6E445D009EC1AE /* MultipeerConnectivity.framework */,
+				8F9C79E51D6E4455009EC1AE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +253,7 @@
 				TargetAttributes = {
 					8F9C79AC1D6E4275009EC1AE = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KWP2UQK8Q2;
 					};
 					8F9C79C51D6E4276009EC1AE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -270,8 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9C79F81D6E45CD009EC1AE /* BTService.m in Sources */,
 				8F9C79B81D6E4275009EC1AE /* ViewController.m in Sources */,
 				8F9C79B51D6E4275009EC1AE /* AppDelegate.m in Sources */,
+				8F9C79F71D6E45CD009EC1AE /* BTDiscovery.m in Sources */,
 				8F9C79B21D6E4275009EC1AE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,10 +462,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Arduino-MBot-iPhones/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idbrothers.Arduino-MBot-iPhones";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,10 +479,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Arduino-MBot-iPhones/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idbrothers.Arduino-MBot-iPhones";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
