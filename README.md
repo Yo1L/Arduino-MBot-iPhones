@@ -14,7 +14,6 @@ References :
 - https://github.com/pj4533/AVCaptureMultipeerVideoDataOutput
 
 TODO:
-- Read status from mBot to initialize toggles
 - make the UI orientable
 - optimize captureOuput conversions
 - design a sexy UI
