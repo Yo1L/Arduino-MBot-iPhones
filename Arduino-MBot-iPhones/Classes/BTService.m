@@ -130,7 +130,7 @@
     return;
   }
   
-  NSLog(@"Sending data with char: %@", self.writeCharacteristic.UUID.UUIDString);
+  NSLog(@"Sending data with service: %@", self.writeCharacteristic.UUID.UUIDString);
   
   [self.peripheral writeValue:data forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithoutResponse];
 }
@@ -141,7 +141,11 @@
   }
   
   NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-  NSLog(@"BT Return %@", str);
+  NSLog(@"BTService Read Return %@", str);
+  
+  NSData *myData = [NSData dataWithData:data];
+  NSDictionary *userInfo = @{@"data": myData};
+  [[NSNotificationCenter defaultCenter] postNotificationName:YLT_BLE_SERVICE_READ_STATUS_NOTIFICATION object:self userInfo:userInfo];
 }
 
 - (BOOL)isDual {
@@ -150,7 +154,7 @@
 
 - (void)sendBTServiceNotificationWithIsBluetoothConnected:(BOOL)isBluetoothConnected {
   NSDictionary *connectionDetails = @{@"isConnected": @(isBluetoothConnected)};
-  [[NSNotificationCenter defaultCenter] postNotificationName:RWT_BLE_SERVICE_CHANGED_STATUS_NOTIFICATION object:self userInfo:connectionDetails];
+  [[NSNotificationCenter defaultCenter] postNotificationName:YLT_BLE_SERVICE_CHANGED_STATUS_NOTIFICATION object:self userInfo:connectionDetails];
 }
 
 @end

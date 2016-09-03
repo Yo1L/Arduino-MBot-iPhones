@@ -32,7 +32,9 @@
   [self.positionSlider setThumbImage:[UIImage imageNamed:@"Bar"] forState:UIControlStateNormal];
   
   // Watch Bluetooth connection
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectionChanged:) name:RWT_BLE_SERVICE_CHANGED_STATUS_NOTIFICATION object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectionChanged:) name:YLT_BLE_SERVICE_CHANGED_STATUS_NOTIFICATION object:nil];
+  // Watch Read returns from Bluetooth
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bluetoothRead:) name:YLT_BLE_SERVICE_READ_STATUS_NOTIFICATION object:nil];
   
   // Start the Bluetooth discovery process
   [BTDiscovery sharedInstance];
@@ -128,8 +130,8 @@
 }
 
 - (void)dealloc {
-  
-  [[NSNotificationCenter defaultCenter] removeObserver:self name:RWT_BLE_SERVICE_CHANGED_STATUS_NOTIFICATION object:nil];
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:YLT_BLE_SERVICE_CHANGED_STATUS_NOTIFICATION object:nil];
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:YLT_BLE_SERVICE_READ_STATUS_NOTIFICATION object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -239,27 +241,35 @@
     
     if (isConnected) {
       // Send current slider position
+      [self sendDirection:0];
       [self sendPosition:(uint8_t)self.positionSlider.value];
       [self sendRun:self.runSwitch.on];
     }
   });
 }
 
+- (void)bluetoothRead:(NSNotification *)notification {
+  Byte data[2];
+  [(NSData *)notification.userInfo[@"data"] getBytes:data length:2];
+  
+  
+  NSLog(@"bluetoothRead Return %u %u", data[0], data[1]);
+}
 
 #pragma mark - Arduino bluetooth commands
 
 - (void)sendRun:(Boolean)status {
-  Byte command[2] = { 0x1, status == YES ? 1 : 0 };
+  Byte command[2] = { 0x80 | 0x1, status == YES ? 1 : 0 };
   [self sendCommand:command];
 }
 
 - (void)sendPosition:(uint8_t)position {
-  Byte command[2] = { 0x2, position };
+  Byte command[2] = { 0x80 | 0x2, position };
   [self sendCommand:command];
 }
 
 - (void)sendDirection:(uint8_t)direction {
-  Byte command[2] = { 0x4, direction };
+  Byte command[2] = { 0x80 | 0x4, direction };
   [self sendCommand:command];
 }
 

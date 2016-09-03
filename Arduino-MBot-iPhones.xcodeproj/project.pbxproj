@@ -22,6 +22,7 @@
 		8F9C79EE1D6E4482009EC1AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9C79ED1D6E4482009EC1AE /* Foundation.framework */; };
 		8F9C79F71D6E45CD009EC1AE /* BTDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C79F41D6E45CD009EC1AE /* BTDiscovery.m */; };
 		8F9C79F81D6E45CD009EC1AE /* BTService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C79F61D6E45CD009EC1AE /* BTService.m */; };
+		8FDA1FD71D7AB66100B11294 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA1FD61D7AB66100B11294 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8F9C79F41D6E45CD009EC1AE /* BTDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTDiscovery.m; path = Classes/BTDiscovery.m; sourceTree = "<group>"; };
 		8F9C79F51D6E45CD009EC1AE /* BTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTService.h; path = Classes/BTService.h; sourceTree = "<group>"; };
 		8F9C79F61D6E45CD009EC1AE /* BTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTService.m; path = Classes/BTService.m; sourceTree = "<group>"; };
+		8FDA1FD61D7AB66100B11294 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +104,9 @@
 		8F9C79A41D6E4275009EC1AE = {
 			isa = PBXGroup;
 			children = (
-				8F9C79F91D6E4657009EC1AE /* Frameworks */,
+				8FDA1FD61D7AB66100B11294 /* README.md */,
 				8F9C79AF1D6E4275009EC1AE /* Arduino-MBot-iPhones */,
+				8F9C79F91D6E4657009EC1AE /* Frameworks */,
 				8F9C79C91D6E4276009EC1AE /* Arduino-MBot-iPhonesTests */,
 				8F9C79D41D6E4276009EC1AE /* Arduino-MBot-iPhonesUITests */,
 				8F9C79AE1D6E4275009EC1AE /* Products */,
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDA1FD71D7AB66100B11294 /* README.md in Sources */,
 				8F9C79F81D6E45CD009EC1AE /* BTService.m in Sources */,
 				8F9C79B81D6E4275009EC1AE /* ViewController.m in Sources */,
 				8F9C79B51D6E4275009EC1AE /* AppDelegate.m in Sources */,
@@ -557,6 +561,7 @@
 				8F9C79DC1D6E4276009EC1AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F9C79DD1D6E4276009EC1AE /* Build configuration list for PBXNativeTarget "Arduino-MBot-iPhonesTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +570,7 @@
 				8F9C79DF1D6E4276009EC1AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F9C79E01D6E4276009EC1AE /* Build configuration list for PBXNativeTarget "Arduino-MBot-iPhonesUITests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +579,7 @@
 				8F9C79E21D6E4276009EC1AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
