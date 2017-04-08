@@ -22,6 +22,10 @@
 		8F9C79EE1D6E4482009EC1AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9C79ED1D6E4482009EC1AE /* Foundation.framework */; };
 		8F9C79F71D6E45CD009EC1AE /* BTDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C79F41D6E45CD009EC1AE /* BTDiscovery.m */; };
 		8F9C79F81D6E45CD009EC1AE /* BTService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C79F61D6E45CD009EC1AE /* BTService.m */; };
+		8FAC37041E98E2240073ECE2 /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAC37001E98E2240073ECE2 /* right-arrow.png */; };
+		8FAC37051E98E2240073ECE2 /* up-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAC37011E98E2240073ECE2 /* up-arrow.png */; };
+		8FAC37061E98E2240073ECE2 /* down-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAC37021E98E2240073ECE2 /* down-arrow.png */; };
+		8FAC37071E98E2240073ECE2 /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAC37031E98E2240073ECE2 /* left-arrow.png */; };
 		8FDA1FD71D7AB66100B11294 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA1FD61D7AB66100B11294 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,10 @@
 		8F9C79F41D6E45CD009EC1AE /* BTDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTDiscovery.m; path = Classes/BTDiscovery.m; sourceTree = "<group>"; };
 		8F9C79F51D6E45CD009EC1AE /* BTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTService.h; path = Classes/BTService.h; sourceTree = "<group>"; };
 		8F9C79F61D6E45CD009EC1AE /* BTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTService.m; path = Classes/BTService.m; sourceTree = "<group>"; };
+		8FAC37001E98E2240073ECE2 /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
+		8FAC37011E98E2240073ECE2 /* up-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow.png"; sourceTree = "<group>"; };
+		8FAC37021E98E2240073ECE2 /* down-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-arrow.png"; sourceTree = "<group>"; };
+		8FAC37031E98E2240073ECE2 /* left-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow.png"; sourceTree = "<group>"; };
 		8FDA1FD61D7AB66100B11294 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +134,7 @@
 		8F9C79AF1D6E4275009EC1AE /* Arduino-MBot-iPhones */ = {
 			isa = PBXGroup;
 			children = (
+				8FAC36FF1E98DFD00073ECE2 /* Resources */,
 				8F9C79F21D6E45C1009EC1AE /* Classes */,
 				8F9C79B31D6E4275009EC1AE /* AppDelegate.h */,
 				8F9C79B41D6E4275009EC1AE /* AppDelegate.m */,
@@ -187,6 +196,17 @@
 				8F9C79E51D6E4455009EC1AE /* AVFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FAC36FF1E98DFD00073ECE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8FAC37001E98E2240073ECE2 /* right-arrow.png */,
+				8FAC37011E98E2240073ECE2 /* up-arrow.png */,
+				8FAC37021E98E2240073ECE2 /* down-arrow.png */,
+				8FAC37031E98E2240073ECE2 /* left-arrow.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +313,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FAC37041E98E2240073ECE2 /* right-arrow.png in Resources */,
+				8FAC37071E98E2240073ECE2 /* left-arrow.png in Resources */,
+				8FAC37061E98E2240073ECE2 /* down-arrow.png in Resources */,
 				8F9C79C01D6E4275009EC1AE /* LaunchScreen.storyboard in Resources */,
+				8FAC37051E98E2240073ECE2 /* up-arrow.png in Resources */,
 				8F9C79BD1D6E4275009EC1AE /* Assets.xcassets in Resources */,
 				8F9C79BB1D6E4275009EC1AE /* Main.storyboard in Resources */,
 			);
