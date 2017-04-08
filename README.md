@@ -1,7 +1,7 @@
 # Arduino-MBot-iPhones
 A simple and basic iPhone Remote controller for iPhone with streaming video.
 
-(Readme/in_app.PNG) (Readme/launch.PNG)
+<img src="Readme/launch.PNG" width="300"> <img src="Readme/in_app.PNG" width="300">
 
 You need at least one iPhone but 2 will be better to stream video :) (1 for the camera attached to the bot and 1 to remote control the bot with the video played back).
 
