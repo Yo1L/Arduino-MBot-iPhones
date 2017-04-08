@@ -26,6 +26,7 @@
 		8FAC37051E98E2240073ECE2 /* up-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAC37011E98E2240073ECE2 /* up-arrow.png */; };
 		8FAC37061E98E2240073ECE2 /* down-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAC37021E98E2240073ECE2 /* down-arrow.png */; };
 		8FAC37071E98E2240073ECE2 /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAC37031E98E2240073ECE2 /* left-arrow.png */; };
+		8FAC37091E990C170073ECE2 /* robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAC37081E990C170073ECE2 /* robot.png */; };
 		8FDA1FD71D7AB66100B11294 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA1FD61D7AB66100B11294 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		8FAC37011E98E2240073ECE2 /* up-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow.png"; sourceTree = "<group>"; };
 		8FAC37021E98E2240073ECE2 /* down-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-arrow.png"; sourceTree = "<group>"; };
 		8FAC37031E98E2240073ECE2 /* left-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow.png"; sourceTree = "<group>"; };
+		8FAC37081E990C170073ECE2 /* robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot.png; sourceTree = "<group>"; };
 		8FDA1FD61D7AB66100B11294 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +203,7 @@
 		8FAC36FF1E98DFD00073ECE2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8FAC37081E990C170073ECE2 /* robot.png */,
 				8FAC37001E98E2240073ECE2 /* right-arrow.png */,
 				8FAC37011E98E2240073ECE2 /* up-arrow.png */,
 				8FAC37021E98E2240073ECE2 /* down-arrow.png */,
@@ -315,6 +318,7 @@
 			files = (
 				8FAC37041E98E2240073ECE2 /* right-arrow.png in Resources */,
 				8FAC37071E98E2240073ECE2 /* left-arrow.png in Resources */,
+				8FAC37091E990C170073ECE2 /* robot.png in Resources */,
 				8FAC37061E98E2240073ECE2 /* down-arrow.png in Resources */,
 				8F9C79C01D6E4275009EC1AE /* LaunchScreen.storyboard in Resources */,
 				8FAC37051E98E2240073ECE2 /* up-arrow.png in Resources */,
@@ -493,6 +497,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KWP2UQK8Q2;
 				INFOPLIST_FILE = "Arduino-MBot-iPhones/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -510,6 +515,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KWP2UQK8Q2;
 				INFOPLIST_FILE = "Arduino-MBot-iPhones/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

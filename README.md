@@ -12,8 +12,9 @@ References :
 - https://www.raywenderlich.com/73306/arduino-tutorial-integrating-bluetooth-le-and-ios
 - Apple : https://www.youtube.com/watch?v=eNWOkm3e8qo&index=3&list=PLHdI2WEfrUznFdAYGgGF3IoJdWM6OtigZ
 - https://github.com/pj4533/AVCaptureMultipeerVideoDataOutput
+- Icons made by [Freepik](http://www.freepik.com) from [www.flaticon.com](http://www.flaticon.com) is licensed by 
+[Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/")
 
 TODO:
 - make the UI orientable
 - optimize captureOuput conversions
-- design a sexy UI
